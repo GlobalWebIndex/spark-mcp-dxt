@@ -1,0 +1,51 @@
+{
+  "dxt_version": "0.1",
+  "name": "gwi-spark",
+  "version": "1.0.0",
+  "description": "One-click install for GWI's Spark MCP server",
+  "author": {
+    "name": "Giorgos Vasileiou",
+    "email": "gvasileiou@gwi.com"
+  },
+  "homepage": "https://www.gwi.com",
+  "documentation": "https://api.globalwebindex.com/docs/spark-mcp/getting-started/introduction",
+  "server": {
+    "type": "node",
+    "entry_point": "dist/proxy.js",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/node_modules/mcp-remote/dist/proxy.js",
+        "https://api.globalwebindex.com/v1/spark-api/mcp",
+        "--header",
+        "Authorization:${AUTH_HEADER}"
+      ],
+      "env": {
+        "AUTH_HEADER": "Bearer ${user_config.spark_api_key}"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "chat_gwi",
+      "description": "Ask natural language questions about audience insights"
+    },
+    {
+      "name": "explore_insight_gwi",
+      "description": "Get detailed breakdowns of specific insights"
+    }
+  ],
+  "compatibility": {
+    "platforms": ["darwin", "win32", "linux"]
+  },
+  "user_config": {
+    "spark_api_key": {
+      "type": "string",
+      "title": "Spark API Key",
+      "description": "Your API key for accessing the Spark MCP server",
+      "required": true,
+      "sensitive": true
+    }
+  },
+  "license": "MIT"
+}
