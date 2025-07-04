@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "build": "dxt pack"
+  },
+  "dependencies": {
+    "@anthropic-ai/dxt": "^0.2.0",
+    "mcp-remote": "^0.1.17"
+  }
+}
