@@ -27,3 +27,8 @@ jobs:
 
       - name: Build DXT extension
         run: npm run build
+      
+      - name: Validate DXT file
+        run: |
+          echo "Validating spark-mcp-dxt.dxt file using info..."
+          npm run info
