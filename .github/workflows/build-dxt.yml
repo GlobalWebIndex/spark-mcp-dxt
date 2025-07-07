@@ -27,10 +27,3 @@ jobs:
 
       - name: Build DXT extension
         run: npm run build
-
-      - name: Upload build artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: dxt-extension
-          path: |
-            spark-mcp-dxt.dxt

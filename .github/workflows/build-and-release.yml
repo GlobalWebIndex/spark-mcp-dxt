@@ -1,0 +1,37 @@
+name: Build and upload release asset
+
+run-name: Build and upload release asset [ ${{ github.event.release.tag_name }} ]
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build-and-upload-release-asset:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.release.tag_name }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build DXT extension
+        run: npm run build
+
+      - name: Upload DXT file
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -f spark-mcp-dxt.dxt ]; then
+            gh release upload ${{ github.event.release.tag_name }} spark-mcp-dxt.dxt
+          else
+            echo "spark-mcp-dxt.dxt not found, skipping upload."
+            exit 1
+          fi
