@@ -13,7 +13,7 @@
     "type": "node",
     "entry_point": "dist/proxy.js",
     "mcp_config": {
-      "comman": "node",
+      "command": "node",
       "args": [
         "${__dirname}/node_modules/mcp-remote/dist/proxy.js",
         "https://api.globalwebindex.com/v1/spark-api/mcp",
