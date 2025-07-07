@@ -4,7 +4,10 @@ on:
   push:
     branches: [main]
   pull_request:
-    branches: [main]
+    types:
+      - opened
+      - reopened
+      - synchronize
 
 jobs:
   build:
@@ -30,4 +33,4 @@ jobs:
         with:
           name: dxt-extension
           path: |
-            *.dxt
+            spark-mcp-dxt.dxt
