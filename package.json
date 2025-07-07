@@ -1,6 +1,16 @@
 {
+  "name": "spark-mcp-dxt",
+  "version": "0.0.0",
+  "description": "Builder for a Claude Desktop Extension that connects to the Spark MCP server using the mcp-remote library",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GlobalWebIndex/spark-mcp-dxt.git"
+  },
+  "author": "Panagiotis Mantafounis",
   "scripts": {
-    "build": "dxt pack"
+    "build": "dxt pack",
+    "info": "dxt info spark-mcp-dxt.dxt"
   },
   "dependencies": {
     "@anthropic-ai/dxt": "^0.2.0",
