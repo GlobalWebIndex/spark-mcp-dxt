@@ -1,4 +1,4 @@
-name: Build DXT Extension
+name: CI
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
       - synchronize
 
 jobs:
-  build:
+  build-and-validate-dxt:
     runs-on: ubuntu-latest
 
     steps:
