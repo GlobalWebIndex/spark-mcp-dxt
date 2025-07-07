@@ -20,7 +20,7 @@ Build Claude Desktop Extension for Spark MCP using mcp-remote
    npm run build
    ```
 
-   > The output contains the location of the extension file `/path/to/spark-mcp-dxt.dxt`
+   > The output contains the location of the extension file `/path/to/spark-mcp.dxt`
 
 # How to deploy to Claude
 

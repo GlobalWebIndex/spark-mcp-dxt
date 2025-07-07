@@ -9,8 +9,8 @@
   },
   "author": "Panagiotis Mantafounis",
   "scripts": {
-    "build": "dxt pack",
-    "info": "dxt info spark-mcp-dxt.dxt"
+    "build": "dxt pack . spark-mcp.dxt",
+    "info": "dxt info spark-mcp.dxt"
   },
   "dependencies": {
     "@anthropic-ai/dxt": "^0.2.0",

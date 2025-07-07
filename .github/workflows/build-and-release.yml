@@ -29,9 +29,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          if [ -f spark-mcp-dxt.dxt ]; then
-            gh release upload ${{ github.event.release.tag_name }} spark-mcp-dxt.dxt
+          if [ -f spark-mcp.dxt ]; then
+            gh release upload ${{ github.event.release.tag_name }} spark-mcp.dxt
           else
-            echo "spark-mcp-dxt.dxt not found, skipping upload."
+            echo "spark-mcp.dxt not found, skipping upload."
             exit 1
           fi
