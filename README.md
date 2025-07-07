@@ -40,4 +40,10 @@ Build Claude Desktop Extension for Spark MCP using mcp-remote
 
 8. Start using the GWI MCP tools in Claude chat
 
-   
+# Use the released extension
+
+1. Navigate to [releases](https://github.com/GlobalWebIndex/spark-mcp-dxt/releases)
+2. Download the latest `spark-mcp-dtx.dtx` file from release assets
+   <img width="914" alt="image" src="https://github.com/user-attachments/assets/23c6177c-5b17-4ffe-93f2-fc85eed78155" />
+
+4. Follow the steps from [How to deploy to Claude](#how-to-deploy-to-claude)
