@@ -1,7 +1,7 @@
 {
   "dxt_version": "0.1",
   "name": "gwi-spark",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "One-click install for GWI's Spark MCP server",
   "author": {
     "name": "Giorgos Vasileiou",
@@ -9,6 +9,12 @@
   },
   "homepage": "https://www.gwi.com",
   "documentation": "https://api.globalwebindex.com/docs/spark-mcp/getting-started/introduction",
+  "support": "https://github.com/GlobalWebIndex/spark-mcp-dxt/issues",
+  "icon": "icon.png",
+  "screenshots": [
+    "assets/screenshots/screenshot_1.png",
+    "assets/screenshots/screenshot2.png"
+  ],
   "server": {
     "type": "node",
     "entry_point": "dist/proxy.js",
@@ -36,7 +42,7 @@
     }
   ],
   "compatibility": {
-    "platforms": ["darwin", "win32", "linux"]
+    "platforms": ["darwin", "win32"]
   },
   "user_config": {
     "spark_api_key": {
