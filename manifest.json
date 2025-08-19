@@ -1,6 +1,7 @@
 {
   "dxt_version": "0.1",
   "name": "gwi-spark",
+  "display_name": "GWI",
   "version": "0.1.0",
   "description": "One-click install for GWI's Spark MCP server",
   "author": {
