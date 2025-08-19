@@ -1,6 +1,6 @@
 {
   "name": "spark-mcp-dxt",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Builder for a Claude Desktop Extension that connects to the Spark MCP server using the mcp-remote library",
   "devDependencies": {},
   "repository": {
